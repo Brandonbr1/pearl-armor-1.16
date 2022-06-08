@@ -41,6 +41,8 @@ public class PearlArmor
 
         // registers ModItems class in package
         ModItems.register(eventBus);
+
+        // register Mod blocks
         ModBlocks.register(eventBus);
 
 
