@@ -15,24 +15,24 @@ public class ModItems {
         public static final DeferredRegister<Item> ITEMS =
                 DeferredRegister.create(ForgeRegistries.ITEMS, PearlArmor.MOD_ID);
 
-        public static final RegistryObject<Item> AMETHYST_SWORD = ITEMS.register("amethyst_sword",
-                () -> new SwordItem(ModItemTier.AMETHYST, 2, 3f,
+        public static final RegistryObject<Item> PEARL_SWORD = ITEMS.register("pearl_sword",
+                () -> new SwordItem(ModItemTier.PEARLORB, 2, 3f,
                         new Item.Properties()));
 
-        public static final RegistryObject<Item> AMETHYST_PICKAXE = ITEMS.register("amethyst_pickaxe",
-                () -> new PickaxeItem(ModItemTier.AMETHYST, 0, -1f,
+        public static final RegistryObject<Item> PEARL_PICKAXE = ITEMS.register("pearl_pickaxe",
+                () -> new PickaxeItem(ModItemTier.PEARLORB, 0, -2f,
                         new Item.Properties()));
 
-        public static final RegistryObject<Item> AMETHYST_SHOVEL = ITEMS.register("amethyst_shovel",
-                () -> new ShovelItem(ModItemTier.AMETHYST, 0, -1f,
+        public static final RegistryObject<Item> PEARL_SHOVEL = ITEMS.register("pearl_shovel",
+                () -> new ShovelItem(ModItemTier.PEARLORB, 0, -2f,
                         new Item.Properties()));
 
-        public static final RegistryObject<Item> AMETHYST_AXE = ITEMS.register("amethyst_axe",
-                () -> new AxeItem(ModItemTier.AMETHYST, 4, -6f,
+        public static final RegistryObject<Item> PEARL_AXE = ITEMS.register("pearl_axe",
+                () -> new AxeItem(ModItemTier.PEARLORB, 4, -6f,
                         new Item.Properties()));
 
-        public static final RegistryObject<Item> AMETHYST_HOE = ITEMS.register("amethyst_hoe",
-                () -> new HoeItem(ModItemTier.AMETHYST, 0, 0f,
+        public static final RegistryObject<Item> PEARL_HOE = ITEMS.register("pearl_hoe",
+                () -> new HoeItem(ModItemTier.PEARLORB, 0, 0f,
                         new Item.Properties()));
 
 

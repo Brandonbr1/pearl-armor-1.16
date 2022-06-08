@@ -1,6 +1,7 @@
 package com.jerios.pearlarmor;
 
 import com.jerios.pearlarmor.block.ModBlocks;
+import com.jerios.pearlarmor.items.ModItemGroup;
 import com.jerios.pearlarmor.items.ModItems;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
