@@ -2,9 +2,12 @@ package com.jerios.pearlarmor.block;
 
 import com.jerios.pearlarmor.PearlArmor;
 import com.jerios.pearlarmor.items.ModItems;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraftforge.common.ToolType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -17,7 +20,8 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, PearlArmor.MOD_ID);
 
-    public static final RegistryObject<Block> PEARL_ORE = registerBlock("pearl_ore", () -> new Block());
+    public static final RegistryObject<Block> PEARL_ORE = registerBlock("pearl_ore",
+            () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestLevel(4).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
 
 
     private static <T extends  Block>RegistryObject<T>  registerBlock(String name, Supplier<T> block) {
