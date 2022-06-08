@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "tutorialmod:pearl_orb"
+          "name": "pearlarmor:pearl_orb"
         }
       ]
     }
