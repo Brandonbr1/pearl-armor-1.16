@@ -9,6 +9,11 @@ import com.jerios.pearlarmor.PearlArmor;
 
 public enum ModMaterialArmor implements IArmorMaterial {
     ;
+    
+    PEARLORB("pearlorb", 37, new int[] MAX_DAMAGE_ARRAY{3, 6, 8, 3}, 15, SoundEvents.ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> {
+        return Ingredient.of(Items.NETHERITE_INGOT);
+    });
+
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
 
