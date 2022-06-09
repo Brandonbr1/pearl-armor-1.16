@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "# #",
+    "# #"
+  ],
+  "key": {
+    "#": {
+      "item": "pearlarmor:pearlorb"
+    }
+  },
+  "result": {
+    "item": "pearlarmor:leggings",
+    "count": 1
+  }
+}

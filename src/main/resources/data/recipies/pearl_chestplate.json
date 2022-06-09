@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "pearlarmor:pearlorb"
+    }
+  },
+  "result": {
+    "item": "pearlarmor:pearl_chestplate",
+    "count": 1
+  }
+}
