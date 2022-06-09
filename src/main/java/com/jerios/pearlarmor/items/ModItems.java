@@ -39,7 +39,7 @@ public class ModItems {
 
 
 
-
+                // armor
 
         public static final RegistryObject<Item> PEARL_BOOTS = ITEMS.register("pearl_boots",
                 () -> new ArmorItem(ModMaterialArmor.PEARLMATERIAL, EquipmentSlotType.FEET,
@@ -56,6 +56,10 @@ public class ModItems {
         public static final RegistryObject<Item> PEARL_HELMET = ITEMS.register("pearl_helmet",
                 () -> new ArmorItem(ModMaterialArmor.PEARLMATERIAL, EquipmentSlotType.HEAD,
                         new Item.Properties()));
+
+
+        public static final RegistryObject<Item> PEARLBOW = ITEMS.register("pearlbow",
+                () -> new BowItem(new Item.Properties().stacksTo(1)));
 
 
 
