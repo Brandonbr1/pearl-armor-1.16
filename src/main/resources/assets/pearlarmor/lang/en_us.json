@@ -1,4 +1,15 @@
 {
   "items.pearlarmor.pearlorb": "Pearl Orb",
   "block.pearlarmor.pearlore": "Pearl Ore"
+  "items.pearlarmor.pearl_sword": "Pearl Sword",
+  "items.pearlarmor.pearl_pickaxe": "Pearl pickaxe",
+  "items.pearlarmor.pearl_hoe": "Pearl hoe",
+  "items.pearlarmor.pearl_shovel": "Pearl shovel",
+  "items.pearlarmor.pearl_axe": "Pearl axe",
+  
+  "items.pearlarmor.pearl_helmet": "Pearl helmet",
+  "items.pearlarmor.pearl_leggings": "Pearl leggings",
+  "items.pearlarmor.pearl_chestplate": "Pearl chestplate",
+  "items.pearlarmor.pearl_boots": "Pearl boots",
+  
 }
