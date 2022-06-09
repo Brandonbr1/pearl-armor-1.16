@@ -3,6 +3,7 @@ package com.jerios.pearlarmor.world.gen;
 import com.jerios.pearlarmor.block.ModBlocks;
 import net.minecraft.block.Block;
 import net.minecraftforge.common.util.Lazy;
+import com.jerios.pearlarmor.world.gen.ModOreGen;
 
 public enum OreType {
 
@@ -31,10 +32,6 @@ public enum OreType {
         return maxVeinSize;
     }
 
-    public int getMinVeinSize() {
-        return minVeinSize;
-    }
-
     public int getMinHeight() {
         return minHeight;
     }
@@ -43,12 +40,13 @@ public enum OreType {
         return maxHeight;
     }
 
-    public static OreType get(Block block) {
-        for (OreType ore : values()) {
-            if(block == ore.block){
-                return ore;
-            }
-        }
-        return null;
-    }
+
+    //public static OreType get(Block block) {
+    //    for (OreType ore : values()) {
+    //       if(block == ore.block){
+    //            return ore;
+    //        }
+    //    }
+    //    return null;
+    //}
 }

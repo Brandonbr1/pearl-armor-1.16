@@ -2,27 +2,15 @@ package com.jerios.pearlarmor.items;
 
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
-import net.minecraft.item.Items;
-import net.minecraft.item.crafting.Ingredient;
-import net.minecraft.util.LazyValue;
-import net.minecraft.util.SoundEvent;
-import com.jerios.pearlarmor.PearlArmor;
-import net.minecraft.util.SoundEvents;
-import java.util.function.Supplier;
-import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
 import net.minecraft.util.SoundEvent;
 import net.minecraft.util.SoundEvents;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
 
 public enum ModMaterialArmor implements IArmorMaterial {
 
 
-    PEARLMATERIAL("pearl", 7, new int[] {5, 8, 10,7}, 12, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.0f, 0.0f, (null));
-
-
+    PEARLMATERIAL("pearl", 7, new int[] {5, 9, 10,7}, 12, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.0f, 0.0f, (null));
 
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
@@ -74,7 +62,6 @@ public enum ModMaterialArmor implements IArmorMaterial {
     }
 
     @Override
-    @OnlyIn(Dist.CLIENT)
     public String getName() {
         return this.name;
     }
@@ -88,5 +75,6 @@ public enum ModMaterialArmor implements IArmorMaterial {
     public float getKnockbackResistance() {
         return this.knockbackResistance;
     }
+
 
 }
