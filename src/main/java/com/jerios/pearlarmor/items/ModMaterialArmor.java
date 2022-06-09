@@ -20,7 +20,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 public enum ModMaterialArmor implements IArmorMaterial {
 
 
-    PEARLMATERIAL("pearl", 7, new int[] {3, 6, 8,3}, 12, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.0f, 0.0f, (null));
+    PEARLMATERIAL("pearl", 7, new int[] {5, 8, 10,7}, 12, SoundEvents.ARMOR_EQUIP_DIAMOND, 3.0f, 0.0f, (null));
 
 
 

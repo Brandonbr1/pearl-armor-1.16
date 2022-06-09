@@ -26,7 +26,7 @@ public class ModOreGen {
     private static ConfiguredFeature<?, ?> registerOreFeature(OreType ore, OreFeatureConfig oreFeatureConfig,
                                                               ConfiguredPlacement configuredPlacement) {
         return Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, ore.getBlock().get().getRegistryName(),
-                Feature.ORE.withConfiguration(oreFeatureConfig).withPlacement(configuredPlacement)
+                Feature.ORE.withConfiguration(oreFeatureConfig).withPlacement(configuredPlacement) // line that is giving trouble fix soon
                         .square().count(ore.getMaxVeinSize()));
     }
 }
