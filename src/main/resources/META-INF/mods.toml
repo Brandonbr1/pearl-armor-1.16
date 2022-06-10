@@ -12,9 +12,7 @@ credits="" #optional
 # A text field displayed in the mod UI
 authors="Brandon/jerios" #optional
 description='''
-
-A mod that adds pearl armor, swords, ores and clams to get it
-
+A mod that adds pearl armor, swords, ores and clams to get it from
 '''
 [[dependencies.pearlarmor]] #optional
     modId="forge" #mandatory
