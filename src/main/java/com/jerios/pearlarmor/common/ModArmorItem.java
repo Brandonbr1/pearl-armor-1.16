@@ -20,6 +20,9 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<IArmorMaterial, Effect> MATERIAL_TO_EFFECT_MAP =
             new ImmutableMap.Builder<IArmorMaterial, Effect>()
                     .put(ModMaterialArmor.PEARLMATERIAL, Effects.WATER_BREATHING)
+                    .put(ModMaterialArmor.PEARLMATERIAL, Effects.DOLPHINS_GRACE)
+                    .put(ModMaterialArmor.PEARLMATERIAL, Effects.REGENERATION)
+                    .put(ModMaterialArmor.PEARLMATERIAL, Effects.LUCK)
                     .build();
 
     public ModArmorItem(IArmorMaterial material, EquipmentSlotType slot, Properties settings) {

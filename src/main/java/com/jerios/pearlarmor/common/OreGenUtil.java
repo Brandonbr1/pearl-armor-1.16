@@ -19,6 +19,6 @@ public class OreGenUtil {
     public static void addOre(final BiomeLoadingEvent event, RuleTest ruleTest, BlockState state, int veinSize, int minHeight, int maxHeight, int amount) {
         event.getGeneration().addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
                 Feature.ORE.configured(new OreFeatureConfig(ruleTest, state, veinSize))
-                        .decorated(Placement.RANGE.configured(new TopSolidRangeConfig(veinSize, minHeight, maxHeight))).squared().count(amount) );
+                        .decorated(Placement.RANGE.configured(new TopSolidRangeConfig(veinSize, minHeight, maxHeight))).squared().count(amount));
     }
 }
