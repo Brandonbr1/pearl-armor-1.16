@@ -24,7 +24,7 @@ public class ModBlocks {
             () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestLevel(4).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> PEARL_BLOCK = registerBlock("pearl_block",
-            () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestLevel(2).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
+            () -> new Block(AbstractBlock.Properties.of(Material.METAL).harvestLevel(4).harvestTool(ToolType.PICKAXE).requiresCorrectToolForDrops()));
 
 
     private static <T extends  Block>RegistryObject<T>  registerBlock(String name, Supplier<T> block) {

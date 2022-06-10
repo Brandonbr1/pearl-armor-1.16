@@ -1,9 +1,11 @@
 package com.jerios.pearlarmor;
 
 import com.jerios.pearlarmor.block.ModBlocks;
+import com.jerios.pearlarmor.common.OreGenUtil;
 import com.jerios.pearlarmor.items.ModItems;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
@@ -35,6 +37,8 @@ public class PearlArmor
 
         // register Mod blocks
         ModBlocks.register(eventBus);
+
+        MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, OreGenUtil::addOres);
 
 
         eventBus.addListener(this::setup);
